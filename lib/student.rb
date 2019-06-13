@@ -17,10 +17,11 @@ class Student
         name TEXT,
         grade INTEGER
       );
+      SQL
   end
   
   def self.drop_table
-    DROP TABLE IF EXISTS students;
+    sql = "DROP TABLE IF EXISTS students;"
   end
 
 end
